@@ -1,0 +1,189 @@
+{
+  "CoreDefinition": {
+    "Arn": "arn:aws:greengrass:us-east-1:253042816796:/greengrass/definition/cores/0097e047-ba64-42ca-8bc2-a13160bbbe38",
+    "CreationTimestamp": "2018-11-15T18:10:57.110Z",
+    "Id": "0097e047-ba64-42ca-8bc2-a13160bbbe38",
+    "LastUpdatedTimestamp": "2018-11-15T18:10:57.110Z",
+    "LatestVersion": "faaf40ac-15b9-42e0-90bf-316b149f4d6d",
+    "LatestVersionArn": "arn:aws:greengrass:us-east-1:253042816796:/greengrass/definition/cores/0097e047-ba64-42ca-8bc2-a13160bbbe38/versions/faaf40ac-15b9-42e0-90bf-316b149f4d6d",
+    "Name": "SaLaunch_core_def"
+  },
+  "Cores": [
+    {
+      "keys": {
+        "certificateArn": "arn:aws:iot:us-east-1:253042816796:cert/d3a8abfcc05c5c17b91152b38e4845aa7813b905f1d85090c0e2f03c35f0d13e",
+        "certificateId": "d3a8abfcc05c5c17b91152b38e4845aa7813b905f1d85090c0e2f03c35f0d13e",
+        "certificatePem": "-----BEGIN CERTIFICATE-----\nMIIDWTCCAkGgAwIBAgIUcNG2FrXxCA5b7g8q/7Bq+0ibIUYwDQYJKoZIhvcNAQEL\nBQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g\nSW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTE4MTExNTE4MDg1\nNloXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0\nZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMdN33KL/s6+qk2PAeJt\n81dvM630NQ7pJ6JkTF3jar2045bjdpMsnsWGIzQV3tY4yioHACcAq3oO93FGbJS8\nPEj87tSg4eleeOHEJdU4wQxF6VPmJJsbFotRi6hKivRKIgy4cIQNV9tJcoJQFkOk\nKXorao3YmyXBWA2ze/Z8BC+D6X9ZjoQvGPujqRUY1Yt2SzfC60J7lwqQj0i35L2I\nGcZ2zV2SYzG/BhzZ3s36rfVMJa/1bDBt5jUxS1iUc4rL31EVQoSIx6aVcDDJCs44\n916/9oBsCDVmalg212RigPNp6bjydIz3OfmOF4MMBbJlwjiNCbLizOrvaBbTE/Mf\n6c8CAwEAAaNgMF4wHwYDVR0jBBgwFoAUPcYhtVc9pZG3mm/p9nBgUYNFnmQwHQYD\nVR0OBBYEFNk6MlDftGFjqjlGHpdew7h0WYR9MAwGA1UdEwEB/wQCMAAwDgYDVR0P\nAQH/BAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQBdIobn0kM59CWOPYNe8a09nXLc\nzThH47kZgnVMY+c3nNwfJ0fMq/QiX53FNOpiR1Sdye3/nU1Jmxf0JNRixCevV7Wm\nt/NvepPtE+bksa6VcHdWuEsfZugPWZRi+JwSbDrmZPierVcAZVwRTEEHAB5hvsrg\n15GJmTQMtMw8oyk95sRRRJAWx9Pn728KvG6yHCwJElYpk1eeGKYZ07bY47onM4TM\nv7Lzt+h6PX5JnuIZKEmtar5qKEkfPt/VtHy0KkxD0C93xB10UvEtnDBRxPY/HOy/\nYCnxA+JT44xbBAMxelhL524Ye+pbgJxD2OtSSy5jp/D3Pk0y/5CHvb9ApmFB\n-----END CERTIFICATE-----\n",
+        "keyPair": {
+          "PrivateKey": "-----BEGIN RSA PRIVATE KEY-----\nMIIEpAIBAAKCAQEAx03fcov+zr6qTY8B4m3zV28zrfQ1DuknomRMXeNqvbTjluN2\nkyyexYYjNBXe1jjKKgcAJwCreg73cUZslLw8SPzu1KDh6V544cQl1TjBDEXpU+Yk\nmxsWi1GLqEqK9EoiDLhwhA1X20lyglAWQ6QpeitqjdibJcFYDbN79nwEL4Ppf1mO\nhC8Y+6OpFRjVi3ZLN8LrQnuXCpCPSLfkvYgZxnbNXZJjMb8GHNnezfqt9Uwlr/Vs\nMG3mNTFLWJRzisvfURVChIjHppVwMMkKzjj3Xr/2gGwINWZqWDbXZGKA82npuPJ0\njPc5+Y4XgwwFsmXCOI0JsuLM6u9oFtMT8x/pzwIDAQABAoIBADjMa5KkbQCUe8pQ\nqBPUi9XuHgdEIl7WeXIhLVZQeloIFBgrSN6Wh8T4/k1YskHQu2SQzC1RVo0ZeNEy\nZb1Zi8CtPI8iLl+oicClerayTunlfqJnYyVE6f7YRXm3jLQj8GI5qe8oMlKPMvAK\nTN4ICb4EY4B7K3PuDt8QuJI9M6Aqcd4Z7T1pnCZ38fX4TWKzQPQafN9FC6GVyRSG\n2Luhxf5BHPELohLD7FZpD0rVyEh39FERvWLNRnsbT7hQG0AUofb8AtQEXhUZ8Ep9\ndoGIoZ48n4YNmvE76i0u2FX7HkLzg9sXMEzzzWEHV4PJ1vR7JKs/GhA/DQ/7jtwT\n7WtMP+ECgYEA7HnD6VGre66dcyQX39vvxerXPIyH0ZPlZUYIQC3EfU2puzV5GSA6\nzzhyjNiNOZV8jyqZXM5NEqWovJqpCssCKqW3lORAEYb8HmSI0A39vhLyf2Vib1/G\nyzJGsrDtIQhyJfXy5ttc/d38JLRby7Yb3ytaaAWd9vBpOgm2TOadLp8CgYEA18Jw\nMaUsNnxhLRoNPG0GiEUaDXRr8HduM4hJSpWRnUQ4gFe1PhVTtHtrJf0yv0cmN52N\nGK7H3bZMf0kul3kFlvVh5weFK5jcnTFJTaqLo5DhjIGW2DdouIEWWbwPYTuUedxQ\nXOHcwzeJHSjHFD8fAqPg73UjbauQp2pSJQTW5tECgYAvNQOqITalgy9FXBA0DTjp\nfr8nBDrc2LRzqi5deYV/KjDXAY7COE/lLDSZ72UJ+NCb1/ozr69tKIrt08YpNGuj\nTd+/Jm2v0g2kl5dESXa9KhUk331uFGWgDNJWO8Gq1X/MGjQ6Z9JBj74VKbgli542\nx/XNTEnDkSzAfE3bPjJkqwKBgQDDSevxE5bkLkpq31Sxp+EswJcnLIRyoDcwD6B/\nEMg/N7uId1rGOdmM19URCo+/UDAIUOOgPrsLM/EjmOLCGbl0fOBDk6v23SJ6aVz3\nHnHL99wfKECXrfdsYPMQ/8ZP9PScJEzc9Vazn/XMXddrvQJdimWTeEw7/Pkuf26g\nsTOusQKBgQCJsXtbrZ+8fUfjy2xQ9VDL03sxF8F1LC+z9ecFsUPX9fX9jwexKgvo\nlpuzNr+hX+YiCHLf3qUn5LsD7zpQl9/LkBn2JkMYWHjUQti3hAvO+nuj7qukyA6R\nctQXfiGPq9BJ+UFwt7UGR2+1RTcU4g7srnrsHXsvZ8/zCLOUqKUcJg==\n-----END RSA PRIVATE KEY-----\n",
+          "PublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx03fcov+zr6qTY8B4m3z\nV28zrfQ1DuknomRMXeNqvbTjluN2kyyexYYjNBXe1jjKKgcAJwCreg73cUZslLw8\nSPzu1KDh6V544cQl1TjBDEXpU+YkmxsWi1GLqEqK9EoiDLhwhA1X20lyglAWQ6Qp\neitqjdibJcFYDbN79nwEL4Ppf1mOhC8Y+6OpFRjVi3ZLN8LrQnuXCpCPSLfkvYgZ\nxnbNXZJjMb8GHNnezfqt9Uwlr/VsMG3mNTFLWJRzisvfURVChIjHppVwMMkKzjj3\nXr/2gGwINWZqWDbXZGKA82npuPJ0jPc5+Y4XgwwFsmXCOI0JsuLM6u9oFtMT8x/p\nzwIDAQAB\n-----END PUBLIC KEY-----\n"
+        }
+      },
+      "name": "SaLaunch_core",
+      "policy": {
+        "policyArn": "arn:aws:iot:us-east-1:253042816796:policy/SaLaunch_core-policy",
+        "policyDocument": "{\"Version\": \"2012-10-17\", \"Statement\": [{\"Action\": [\"iot:Publish\", \"iot:Subscribe\", \"iot:Connect\", \"iot:Receive\", \"iot:GetThingShadow\", \"iot:DeleteThingShadow\", \"iot:UpdateThingShadow\"], \"Resource\": [\"arn:aws:iot:us-east-1:*:*\"], \"Effect\": \"Allow\"}, {\"Action\": [\"greengrass:AssumeRoleForGroup\", \"greengrass:CreateCertificate\", \"greengrass:GetConnectivityInfo\", \"greengrass:GetDeployment\", \"greengrass:GetDeploymentArtifacts\", \"greengrass:UpdateConnectivityInfo\", \"greengrass:UpdateCoreDeploymentStatus\"], \"Resource\": [\"*\"], \"Effect\": \"Allow\"}]}",
+        "policyName": "SaLaunch_core-policy",
+        "policyVersionId": "1"
+      },
+      "thing": {
+        "thingArn": "arn:aws:iot:us-east-1:253042816796:thing/SaLaunch_core",
+        "thingId": "b71d4a6e-511c-4d0f-9347-51bb45d43476",
+        "thingName": "SaLaunch_core"
+      }
+    }
+  ],
+  "Deployment": {
+    "DeploymentArn": "arn:aws:greengrass:us-east-1:253042816796:/greengrass/groups/fd64da52-f22c-4d36-8fe2-f45c39c8e440/deployments/c9269f0d-a344-44d0-8c0b-a2cdc468326e",
+    "DeploymentId": "c9269f0d-a344-44d0-8c0b-a2cdc468326e",
+    "Status": {
+      "DeploymentStatus": "Success",
+      "DeploymentType": "NewDeployment",
+      "UpdatedAt": "2018-11-15T22:10:28.295Z"
+    }
+  },
+  "FunctionDefinition": {
+    "Arn": "arn:aws:greengrass:us-east-1:253042816796:/greengrass/definition/functions/7c050fa0-d2a8-4115-9433-f422760416ab",
+    "CreationTimestamp": "2018-11-15T22:10:18.361Z",
+    "Id": "7c050fa0-d2a8-4115-9433-f422760416ab",
+    "LastUpdatedTimestamp": "2018-11-15T22:10:18.361Z",
+    "LatestVersion": "f4e106dd-f3f3-49cc-90bd-24760fee3025",
+    "LatestVersionArn": "arn:aws:greengrass:us-east-1:253042816796:/greengrass/definition/functions/7c050fa0-d2a8-4115-9433-f422760416ab/versions/f4e106dd-f3f3-49cc-90bd-24760fee3025",
+    "LatestVersionDetails": {
+      "Arn": "arn:aws:greengrass:us-east-1:253042816796:/greengrass/definition/functions/7c050fa0-d2a8-4115-9433-f422760416ab/versions/f4e106dd-f3f3-49cc-90bd-24760fee3025",
+      "CreationTimestamp": "2018-11-15T22:10:18.361Z",
+      "Definition": {
+        "Functions": [
+          {
+            "FunctionArn": "arn:aws:lambda:us-east-1:253042816796:function:DataGenerationHandler:dev",
+            "FunctionConfiguration": {
+              "Environment": {
+                "AccessSysfs": true
+              },
+              "MemorySize": 128000,
+              "Pinned": true,
+              "Timeout": 60
+            },
+            "Id": "DataGenerationHandler"
+          }
+        ]
+      },
+      "Id": "7c050fa0-d2a8-4115-9433-f422760416ab",
+      "Version": "f4e106dd-f3f3-49cc-90bd-24760fee3025"
+    },
+    "Name": "SaLaunch_func_def_1"
+  },
+  "Group": {
+    "Arn": "arn:aws:greengrass:us-east-1:253042816796:/greengrass/groups/fd64da52-f22c-4d36-8fe2-f45c39c8e440",
+    "CreationTimestamp": "2018-11-15T18:10:56.025Z",
+    "Id": "fd64da52-f22c-4d36-8fe2-f45c39c8e440",
+    "LastUpdatedTimestamp": "2018-11-15T18:10:56.025Z",
+    "Name": "SaLaunch",
+    "Version": {
+      "Arn": "arn:aws:greengrass:us-east-1:253042816796:/greengrass/groups/fd64da52-f22c-4d36-8fe2-f45c39c8e440/versions/c40d6a18-98eb-4fb2-bb94-394690e88283",
+      "CreationTimestamp": "2018-11-15T22:10:20.440Z",
+      "Id": "fd64da52-f22c-4d36-8fe2-f45c39c8e440",
+      "Version": "c40d6a18-98eb-4fb2-bb94-394690e88283"
+    }
+  },
+  "LambdaRole": {
+    "Role": {
+      "Arn": "arn:aws:iam::253042816796:role/SaLaunch_Lambda_Role",
+      "AssumeRolePolicyDocument": {
+        "Statement": [
+          {
+            "Action": "sts:AssumeRole",
+            "Effect": "Allow",
+            "Principal": {
+              "Service": "lambda.amazonaws.com"
+            }
+          }
+        ],
+        "Version": "2012-10-17"
+      },
+      "CreateDate": "2018-11-15 22:10:17+00:00",
+      "Path": "/",
+      "RoleId": "AROAJOESFI4WFJLRK7L3Q",
+      "RoleName": "SaLaunch_Lambda_Role"
+    }
+  },
+  "Lambdas": [
+    {
+      "CodeSha256": "I3soSLbR/JUC1l5IwWmgkZ7eEdCRuTH7p7P3q9OagMY=",
+      "CodeSize": 16757,
+      "Description": "",
+      "Environment": {
+        "Variables": {}
+      },
+      "FunctionArn": "arn:aws:lambda:us-east-1:253042816796:function:DataGenerationHandler",
+      "FunctionName": "DataGenerationHandler",
+      "Handler": "DataGenerationHandler.pinned_handler",
+      "LastModified": "2018-11-15T22:10:17.661+0000",
+      "MemorySize": 128,
+      "RevisionId": "cc89caaf-8ee2-426b-b840-189d0516bd97",
+      "Role": "arn:aws:iam::253042816796:role/SaLaunch_Lambda_Role",
+      "Runtime": "python2.7",
+      "Timeout": 3,
+      "TracingConfig": {
+        "Mode": "PassThrough"
+      },
+      "Version": "14",
+      "ZipPath": "/Users/bertiago/workspace/sa-launch-project/.gg/DataGenerationHandler.zip"
+    }
+  ],
+  "Subscriptions": {
+    "Arn": "arn:aws:greengrass:us-east-1:253042816796:/greengrass/definition/subscriptions/7d6c2320-c6df-4553-93f5-342bbf776073",
+    "CreationTimestamp": "2018-11-15T22:10:20.104Z",
+    "Id": "7d6c2320-c6df-4553-93f5-342bbf776073",
+    "LastUpdatedTimestamp": "2018-11-15T22:10:20.104Z",
+    "LatestVersion": "f1a8e576-4511-4686-9715-158959aaf087",
+    "LatestVersionArn": "arn:aws:greengrass:us-east-1:253042816796:/greengrass/definition/subscriptions/7d6c2320-c6df-4553-93f5-342bbf776073/versions/f1a8e576-4511-4686-9715-158959aaf087",
+    "LatestVersionDetails": {
+      "Arn": "arn:aws:greengrass:us-east-1:253042816796:/greengrass/definition/subscriptions/7d6c2320-c6df-4553-93f5-342bbf776073/versions/f1a8e576-4511-4686-9715-158959aaf087",
+      "CreationTimestamp": "2018-11-15T22:10:20.104Z",
+      "Definition": {
+        "Subscriptions": [
+          {
+            "Id": "0",
+            "Source": "GGShadowService",
+            "Subject": "$aws/things/SaLaunch_core/shadow/get/#",
+            "Target": "cloud"
+          },
+          {
+            "Id": "1",
+            "Source": "GGShadowService",
+            "Subject": "$aws/things/SaLaunch_core/shadow/update/#",
+            "Target": "cloud"
+          },
+          {
+            "Id": "2",
+            "Source": "cloud",
+            "Subject": "$aws/things/SaLaunch_core/shadow/get/#",
+            "Target": "GGShadowService"
+          },
+          {
+            "Id": "3",
+            "Source": "cloud",
+            "Subject": "$aws/things/SaLaunch_core/shadow/update/#",
+            "Target": "GGShadowService"
+          },
+          {
+            "Id": "4",
+            "Source": "cloud",
+            "Subject": "SaLaunch/DataGenerationHandler",
+            "Target": "arn:aws:lambda:us-east-1:253042816796:function:DataGenerationHandler:dev"
+          },
+          {
+            "Id": "5",
+            "Source": "arn:aws:lambda:us-east-1:253042816796:function:DataGenerationHandler:dev",
+            "Subject": "SaLaunch/DataGenerationHandler",
+            "Target": "cloud"
+          }
+        ]
+      },
+      "Id": "7d6c2320-c6df-4553-93f5-342bbf776073",
+      "Version": "f1a8e576-4511-4686-9715-158959aaf087"
+    },
+    "Name": "SaLaunch_subscription"
+  }
+}

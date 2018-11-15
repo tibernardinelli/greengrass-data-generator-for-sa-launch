@@ -1,0 +1,40 @@
+# Greeengrass Group definition file
+Group:
+  name: SaLaunch
+Cores:
+  - name: SaLaunch_core
+    key_path: ./certs
+    config_path: ./config
+    SyncShadow: True
+Lambdas:
+  - name: DataGenerationHandler
+    handler: DataGenerationHandler.pinned_handler
+    package: lambdas/DataGeneration
+    alias: dev
+    greengrassConfig:
+      MemorySize: 128000 # kb
+      Timeout: 60 # seconds
+      Pinned: True
+      Environment:
+        AccessSysfs: True        
+Subscriptions:
+  - Source: GGShadowService
+    Subject: '$aws/things/SaLaunch_core/shadow/get/#'
+    Target: cloud
+  - Source: GGShadowService
+    Subject: '$aws/things/SaLaunch_core/shadow/update/#'
+    Target: cloud
+  - Source: cloud
+    Subject: '$aws/things/SaLaunch_core/shadow/get/#'
+    Target: GGShadowService
+  - Source: cloud
+    Subject: '$aws/things/SaLaunch_core/shadow/update/#'
+    Target: GGShadowService
+  - Source: cloud
+    Subject: 'SaLaunch/DataGenerationHandler'
+    Target: Lambda::DataGenerationHandler
+  - Source: Lambda::DataGenerationHandler
+    Subject: 'SaLaunch/DataGenerationHandler'
+    Target: cloud
+# Resource as defined at http://boto3.readthedocs.io/en/latest/reference/services/greengrass.html#Greengrass.Client.create_resource_definition_version
+Resources:
