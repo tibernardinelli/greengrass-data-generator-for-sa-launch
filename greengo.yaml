@@ -17,6 +17,15 @@ Lambdas:
       Pinned: True
       Environment:
         AccessSysfs: True        
+  - name: ChangeBehavior
+    handler: DataGenerationHandler.change_behavior_handler
+    package: lambdas/DataGeneration
+    greengrassConfig:
+      MemorySize: 128000 # kb
+      Timeout: 60 # seconds
+      Pinned: False
+      Environment:
+        AccessSysfs: True
 Subscriptions:
   - Source: GGShadowService
     Subject: '$aws/things/SaLaunch_core/shadow/get/#'
