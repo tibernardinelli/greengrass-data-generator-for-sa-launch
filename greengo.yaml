@@ -1,8 +1,8 @@
 # Greeengrass Group definition file
 Group:
-  name: SaLaunch
+  name: ThreathDetection
 Cores:
-  - name: SaLaunch_core
+  - name: ThreathDetection_core
     key_path: ./certs
     config_path: ./config
     SyncShadow: True
@@ -28,22 +28,22 @@ Lambdas:
         AccessSysfs: True
 Subscriptions:
   - Source: GGShadowService
-    Subject: '$aws/things/SaLaunch_core/shadow/get/#'
+    Subject: '$aws/things/ThreathDetection_core/shadow/get/#'
     Target: cloud
   - Source: GGShadowService
-    Subject: '$aws/things/SaLaunch_core/shadow/update/#'
+    Subject: '$aws/things/ThreathDetection_core/shadow/update/#'
     Target: cloud
   - Source: cloud
-    Subject: '$aws/things/SaLaunch_core/shadow/get/#'
+    Subject: '$aws/things/ThreathDetection_core/shadow/get/#'
     Target: GGShadowService
   - Source: cloud
-    Subject: '$aws/things/SaLaunch_core/shadow/update/#'
+    Subject: '$aws/things/ThreathDetection_core/shadow/update/#'
     Target: GGShadowService
   - Source: cloud
-    Subject: 'SaLaunch/ChangeBehavior'
+    Subject: 'ThreathDetection/ChangeBehavior'
     Target: Lambda::ChangeBehavior
   - Source: Lambda::DataGenerationHandler
-    Subject: 'SaLaunch/DataGenerationHandler'
+    Subject: 'ThreathDetection/DataGenerationHandler'
     Target: cloud
 # Resource as defined at http://boto3.readthedocs.io/en/latest/reference/services/greengrass.html#Greengrass.Client.create_resource_definition_version
 Resources:
