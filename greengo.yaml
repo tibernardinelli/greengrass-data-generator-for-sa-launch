@@ -18,7 +18,7 @@ Lambdas:
       Environment:
         AccessSysfs: True        
   - name: ChangeBehavior
-    handler: DataGenerationHandler.change_behavior_handler
+    handler: ChangeBehaviorHandler.change_behavior_handler
     package: lambdas/DataGeneration
     greengrassConfig:
       MemorySize: 128000 # kb

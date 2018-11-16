@@ -25,7 +25,7 @@ def post_message():
     tmp = payload.copy()      
     tmp['value'] = get_random_number() ## change this
     tmp['behavior'] = behavior
-    iotData.publish(topic='SaLaunch/DataGenerationHandler', payload=json.dumps(tmp))
+    iotData.publish(topic='ThreathDetection/DataGenerationHandler', payload=json.dumps(tmp))
 
 scale = [0, 49]
 def get_random_number():    
@@ -33,7 +33,7 @@ def get_random_number():
         return random.random()
     if behavior == "FALLING":
         return random.random()
-    return 0
+    return 1
 
 def change_behavior_handler(event, context):
     logger.info("CHANGE BEHAVIOR HANDLER {}".format(event))

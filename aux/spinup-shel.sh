@@ -20,9 +20,9 @@ sudo ./check_ggc_dependencies
 aws s3 cp s3://greengrassd-files-sa-launch-team-3/greengrass-linux-x86-64-1.6.0.tar.gz /tmp/greengrass-linux-x86-64-1.6.0.tar.gz
 tar -xzvf /tmp/greengrass-linux-x86-64-1.6.0.tar.gz -C /
 
-aws s3 cp s3://greengrassd-files-sa-launch-team-3/certs/SaLaunch_core.key /greengrass/certs/SaLaunch_core.key
-aws s3 cp s3://greengrassd-files-sa-launch-team-3/certs/SaLaunch_core.pem /greengrass/certs/SaLaunch_core.pem
-aws s3 cp s3://greengrassd-files-sa-launch-team-3/certs/SaLaunch_core.pub /greengrass/certs/SaLaunch_core.pub
+aws s3 cp s3://greengrassd-files-sa-launch-team-3/certs/ThreathDetection_core.key /greengrass/certs/ThreathDetection_core.key
+aws s3 cp s3://greengrassd-files-sa-launch-team-3/certs/ThreathDetection_core.pem /greengrass/certs/ThreathDetection_core.pem
+aws s3 cp s3://greengrassd-files-sa-launch-team-3/certs/ThreathDetection_core.pub /greengrass/certs/ThreathDetection_core.pub
 aws s3 cp s3://greengrassd-files-sa-launch-team-3/config/config.json /greengrass/config/config.json
 
 cd /greengrass/certs/
@@ -31,3 +31,5 @@ sudo wget -O root.ca.pem http://www.symantec.com/content/en/us/enterprise/verisi
 cd /greengrass/ggc/core/
 sudo ./greengrassd start
 
+# aws s3 sync config/ s3://greengrassd-files-sa-launch-team-3/config/
+# aws s3 sync certs/ s3://greengrassd-files-sa-launch-team-3/certs/
