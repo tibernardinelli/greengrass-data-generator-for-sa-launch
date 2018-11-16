@@ -40,8 +40,8 @@ Subscriptions:
     Subject: '$aws/things/SaLaunch_core/shadow/update/#'
     Target: GGShadowService
   - Source: cloud
-    Subject: 'SaLaunch/DataGenerationHandler'
-    Target: Lambda::DataGenerationHandler
+    Subject: 'SaLaunch/ChangeBehavior'
+    Target: Lambda::ChangeBehavior
   - Source: Lambda::DataGenerationHandler
     Subject: 'SaLaunch/DataGenerationHandler'
     Target: cloud

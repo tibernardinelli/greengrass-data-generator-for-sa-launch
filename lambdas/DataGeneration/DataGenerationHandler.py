@@ -17,29 +17,26 @@ logger.setLevel(logging.INFO)
 iotData = greengrasssdk.client('iot-data')
 
 hostname = urllib2.urlopen('http://169.254.169.254/latest/meta-data/instance-id').read()
-payload = { "value": 0, "deviceId": hostname, "label": "temp" }
+payload = { "value": 0, "deviceId": hostname, "label": "Hydrogen Sulfide" }
 
 behavior = "FLAT"
 
 def post_message():
-    tmp = payload.copy() 
-
-    if behavior == "FLAT":       
-        tmp['value'] = random.random()
-    if behavior == "RISING":
-        tmp['value'] = random.random() ## change this
-    if behavior == "FALLING":
-        tmp['value'] = random.random() ## change this
-
+    tmp = payload.copy()      
+    tmp['value'] = get_random_number() ## change this
+    tmp['behavior'] = behavior
     iotData.publish(topic='SaLaunch/DataGenerationHandler', payload=json.dumps(tmp))
 
 scale = [0, 49]
-def get_random_number():
-    
-    pass
+def get_random_number():    
+    if behavior == "RISING":
+        return random.random()
+    if behavior == "FALLING":
+        return random.random()
+    return 0
 
 def change_behavior_handler(event, context):
-    logger.info("CHANGE BEHAVIOR HANDLER")
+    logger.info("CHANGE BEHAVIOR HANDLER {}".format(event))
     behavior = event["behavior"]
     logger.info("behavior is now" + behavior)
 
